@@ -1,3 +1,29 @@
+:root {
+  --dark-bg: #1F2937;
+  --text-light: #F9FAF8;
+  --text-secondary: #E5E7EB;
+  --accent-blue: #3882F6;
+  --text-dark: #1F2937;
+  --quote-bg: #E5E7EB;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--dark-bg);
+}
+
+.hero-section, .footer {
+  background-color: var(--dark-bg);
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--text-light);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -10,11 +36,32 @@ nav ul {
   list-style: none;
 }
 
+.hero-text h1 {
+  font-size: 48px;
+  color: var(--text-light);
+  font-weight: 900;
+}
+
+.hero-text p, nav ul a {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+button {
+  background-color: var(--accent-blue);
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: /* value */;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  color: var(--text-dark);
+  font-weight: 900;
 }
 
 .info-cards {
@@ -29,8 +76,23 @@ nav ul {
   align-items: center;
 }
 
+.quote-section {
+  background-color: var(--quote-bg);
+}
+
+blockquote {
+  font-size: 36px;
+  color: var(--text-dark);
+  font-weight: 300;
+  font-style: italic;
+}
+
 .cta-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+    color: var(--text-secondary);
 }
